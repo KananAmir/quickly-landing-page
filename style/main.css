@@ -38,6 +38,7 @@
 }
 #header .header-container .mobile .menu-icon {
   display: block;
+  cursor: pointer;
 }
 #header .header-container .mobile .close-icon {
   display: none;
@@ -69,9 +70,77 @@
   border-radius: 8px;
 }
 
+#hero-section {
+  max-width: 600px;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+#hero-section .banner {
+  width: 50%;
+}
+#hero-section .title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #072125;
+}
+#hero-section .description {
+  font-size: 14px;
+  color: #20484f;
+}
+#hero-section .email-input {
+  position: relative;
+  max-width: 460px;
+  margin: 0 auto;
+}
+#hero-section .email-input .email {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #20484f;
+  border-radius: 8px;
+  padding: 0 20px;
+  outline: none;
+}
+#hero-section .email-input .email::placeholder {
+  color: rgba(32, 72, 79, 0.2);
+  font-size: 18px;
+}
+#hero-section .email-input .sign-up {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 96px;
+  height: 48px;
+  border: none;
+  border: 1px solid #20484f;
+  border-left: unset;
+  background: #b8e4da;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 @media (min-width: 768px) {
   #header .header-container {
     padding: 10px 20px;
+  }
+  #hero-section {
+    margin: 3rem auto;
+  }
+  #hero-section .banner {
+    width: 50%;
+  }
+  #hero-section .title {
+    font-size: 50px;
+  }
+  #hero-section .description {
+    font-size: 18px;
+  }
+  #hero-section .email-input .email {
+    height: 58px;
+    padding: 0 20px;
+  }
+  #hero-section .email-input .sign-up {
+    width: 136px;
+    height: 58px;
   }
 }
 
