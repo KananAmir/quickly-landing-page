@@ -1,4 +1,9 @@
 #header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
   background-color: #20484f;
 }
 #header .header-container {
@@ -47,7 +52,7 @@
   display: none;
   position: absolute;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   z-index: 1;
   flex-direction: column;
   justify-content: center;
@@ -71,9 +76,10 @@
 }
 
 #hero-section {
-  max-width: 600px;
+  max-width: 610px;
   text-align: center;
   margin: 1.5rem auto;
+  padding: 0 5%;
 }
 #hero-section .banner {
   width: 50%;
@@ -118,6 +124,42 @@
   border-bottom-right-radius: 8px;
 }
 
+#team {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 5%;
+}
+#team .title {
+  font-size: 25px;
+  color: #072125;
+}
+#team .description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #072125;
+}
+#team .team-member .team-member-name {
+  font-size: 18px;
+  color: #072125;
+}
+#team .team-member .team-img {
+  max-width: 225px;
+}
+#team .team-member .position {
+  color: #20484f;
+  font-size: 13px;
+}
+#team .team-member:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
   #header .header-container {
     padding: 10px 20px;
@@ -141,6 +183,22 @@
   #hero-section .email-input .sign-up {
     width: 136px;
     height: 58px;
+  }
+  #team .title {
+    font-size: 40px;
+  }
+  #team .description {
+    font-size: 16px;
+  }
+  #team .team-member .team-member-name {
+    font-size: 24px;
+  }
+  #team .team-member .team-img {
+    max-width: 240px;
+  }
+  #team .team-member .position {
+    color: #20484f;
+    font-size: 18px;
   }
 }
 
