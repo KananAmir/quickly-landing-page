@@ -1,0 +1,12 @@
+# ignore ALL .log files
+*.log
+
+# IDE's project files
+.idea
+.vscode
+
+# Windows thumbnail cache
+Thumps.db
+
+# Mac OS Files
+.DS_Store
