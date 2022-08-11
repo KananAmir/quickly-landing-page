@@ -1,5 +1,78 @@
-.container h1 {
+#header {
+  background-color: #20484f;
+}
+#header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 5%;
+  max-width: 1200px;
+}
+#header .header-container .logo {
+  color: #fff;
+}
+#header .header-container .nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .header-container .nav ul li {
+  margin: 0 10px;
+  list-style: none;
+}
+#header .header-container .nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+#header .header-container .btn {
+  outline: none;
+  border: none;
+}
+#header .header-container .sign-up {
+  background-color: #b8e4da;
+  border-radius: 8px;
+}
+#header .header-container .login {
+  color: #fff;
+}
+#header .header-container .mobile .menu-icon {
+  display: block;
+}
+#header .header-container .mobile .close-icon {
+  display: none;
+}
+#header #nav-mobile {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 90vh;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #b8e4da;
+  border-top: 1px solid #20484f;
   color: #20484f;
+}
+#header #nav-mobile ul li {
+  list-style: none;
+}
+#header #nav-mobile ul li a {
+  text-decoration: none;
+  color: #20484f;
+  font-size: 24px;
+}
+#header #nav-mobile .sign-up {
+  background-color: #20484f;
+  color: #fff;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  #header .header-container {
+    padding: 10px 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
