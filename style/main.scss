@@ -165,6 +165,35 @@
         }
     }
 }
+#feature-blocks {
+    .feature-blocks-divider {
+        width: 100%;
+    }
+    .feature-blocks-container {
+        background: $primary-color;
+        margin-top: -7px;
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            color: $white;
+            padding: 0 5%;
+            .title {
+                font-size: 18px;
+            }
+            .description,
+            .feature-description {
+                font-size: 11px;
+                font-weight: 400;
+            }
+            .feature-name {
+                font-size: 12px;
+            }
+            .feature-icon {
+                width: 36px;
+            }
+        }
+    }
+}
 
 @media (min-width: 768px) {
     #header {
@@ -195,6 +224,7 @@
         }
     }
     #team {
+        padding: 0;
         .title {
             font-size: 40px;
         }
@@ -211,6 +241,26 @@
             .position {
                 color: $primary-color;
                 font-size: 18px;
+            }
+        }
+    }
+    #feature-blocks {
+        .feature-blocks-container {
+            .content {
+                padding: 10px 20px;
+                .title {
+                    font-size: 32px;
+                }
+                .description,
+                .feature-description {
+                    font-size: 16px;
+                }
+                .feature-name {
+                    font-size: 18px;
+                }
+                .feature-icon {
+                    width: 56px;
+                }
             }
         }
     }
