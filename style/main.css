@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../assets/fonts/PlusJakartaSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+.body {
+  font-family: Plus Jakarta Sans;
+}
 .body #header {
   position: sticky;
   top: 0;
@@ -76,7 +95,6 @@
   border-radius: 8px;
 }
 .body #hero-section {
-  max-width: 610px;
   text-align: center;
   margin: 1.5rem auto;
   padding: 0 5%;
@@ -84,7 +102,7 @@
 .body #hero-section .banner {
   width: 50%;
 }
-.body #hero-section .title {
+.body #hero-section .hero-section-title {
   font-size: 30px;
   font-weight: 700;
   color: #072125;
@@ -149,6 +167,21 @@
   border: 1px solid #20484f;
   background-color: transparent;
   color: #20484f;
+}
+.body #social-logos {
+  margin: 0 auto;
+  padding: 10px 5%;
+  max-width: 1200px;
+  text-align: center;
+}
+.body #social-logos .title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #20484f;
+}
+.body #social-logos img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 .body #team {
   display: flex;
@@ -269,10 +302,10 @@
     margin: 3rem auto;
   }
   .body #hero-section .banner {
-    width: 50%;
+    width: 360px;
   }
-  .body #hero-section .title {
-    font-size: 50px;
+  .body #hero-section .hero-section-title {
+    font-size: 45px;
   }
   .body #hero-section .description {
     font-size: 18px;
@@ -284,6 +317,9 @@
   .body #hero-section .email-input .sign-up {
     width: 136px;
     height: 58px;
+  }
+  .body #social-logos .title {
+    font-size: 24px;
   }
   .body #team {
     padding: 0;

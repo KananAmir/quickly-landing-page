@@ -1,6 +1,23 @@
 @import "variables.scss";
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../assets/fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../assets/fonts/PlusJakartaSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
 
+@font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../assets/fonts/PlusJakartaSans-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
 .body {
+    font-family: Plus Jakarta Sans;
     #header {
         position: sticky;
         top: 0;
@@ -83,14 +100,13 @@
         }
     }
     #hero-section {
-        max-width: 610px;
         text-align: center;
         margin: 1.5rem auto;
         padding: 0 5%;
         .banner {
             width: 50%;
         }
-        .title {
+        .hero-section-title {
             font-size: 30px;
             font-weight: 700;
             color: $dark;
@@ -154,6 +170,23 @@
                 border: 1px solid $primary-color;
                 background-color: transparent;
                 color: $primary-color;
+            }
+        }
+    }
+    #social-logos {
+        margin: 0 auto;
+        padding: 10px 5%;
+        max-width: 1200px;
+        text-align: center;
+        .title {
+            font-size: 16px;
+            font-weight: 400;
+            color: $primary-color;
+        }
+        img {
+            &:hover {
+                opacity: 0.5;
+                cursor: pointer;
             }
         }
     }
@@ -287,10 +320,10 @@
         #hero-section {
             margin: 3rem auto;
             .banner {
-                width: 50%;
+                width: 360px;
             }
-            .title {
-                font-size: 50px;
+            .hero-section-title {
+                font-size: 45px;
             }
             .description {
                 font-size: 18px;
@@ -304,6 +337,11 @@
                     width: 136px;
                     height: 58px;
                 }
+            }
+        }
+        #social-logos {
+            .title {
+                font-size: 24px;
             }
         }
         #team {
