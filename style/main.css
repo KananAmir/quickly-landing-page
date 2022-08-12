@@ -123,6 +123,33 @@
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
+.body #free-trial {
+  text-align: center;
+  padding: 0 5%;
+}
+.body #free-trial .desc {
+  font-size: 14px;
+  color: #20484f;
+  font-weight: 600;
+}
+.body #free-trial .title {
+  font-size: 25px;
+  color: #072125;
+}
+.body #free-trial .trial-btn {
+  border: none;
+  outline: none;
+  background-color: #20484f;
+  color: #fff;
+  border-radius: 8px;
+  width: 150px;
+  height: 48px;
+}
+.body #free-trial .trial-btn:hover {
+  border: 1px solid #20484f;
+  background-color: transparent;
+  color: #20484f;
+}
 .body #team {
   display: flex;
   flex-direction: column;
@@ -304,6 +331,17 @@
   }
   .body #footer .content .copyright {
     font-size: 14px;
+  }
+  .body #free-trial .desc {
+    font-size: 18px;
+  }
+  .body #free-trial .title {
+    font-size: 40px;
+    color: #072125;
+  }
+  .body #free-trial .trial-btn {
+    width: 190px;
+    height: 58px;
   }
 }
 
