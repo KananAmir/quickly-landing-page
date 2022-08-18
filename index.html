@@ -6,21 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link href="style/bootstrap.min.css" rel="stylesheet" >
+    <link href="style/bootstrap.min.css" rel="stylesheet">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="style/animate.min.css">
     <link rel="stylesheet" href="style/main.css">
+    <!-- Animate On Scroll | AOSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Quickly Landing Page</title>
+    <style>
+        @keyframes sway {
+            0% {
+                transform: rotate(3deg);
+            }
+
+            50% {
+                transform: rotate(-3deg);
+            }
+
+            100% {
+                transform: rotate(3deg);
+            }
+        }
+
+        .copyright {
+            animation: sway 2.4s infinite;
+            animation-timing-function: ease-in-out;
+            -webkit-transform-origin: top;
+            -moz-transform-origin: top;
+            transform-origin: top;
+        }
+    </style>
 </head>
 
 <body>
     <div class="body">
         <header id="header">
             <div class="header-container">
-                <h1 class="logo">Quickly</h1>
-                <div class="nav d-none d-md-block">
+                <h1 class="logo" data-aos="fade-right" data-aos-duration="3000">Quickly</h1>
+                <div class="nav d-none d-md-block" data-aos="fade-up" data-aos-duration="3000">
                     <ul class="p-0 m-0">
                         <li><a href="#about">About us</a></li>
                         <li><a href="#products">Products</a></li>
@@ -29,7 +54,7 @@
                         <li><a href="#team">Our Team</a></li>
                     </ul>
                 </div>
-                <div class="d-none d-md-block">
+                <div class="d-none d-md-block" data-aos="fade-left" data-aos-duration="3000">
                     <button class="sign-up btn">Sign Up</button>
                     <button class="login btn">Login</button>
                 </div>
@@ -50,24 +75,27 @@
                     <button class="sign-up btn">Sign Up</button>
                     <button class="login btn">Login</button>
                 </div>
-
             </div>
         </header>
         <section id="hero-section">
-            <img class="banner" src="assets/ballet.svg" alt="ballet">
-            <h1 class="hero-section-title mt-3">Get your most important <br> tasks done in no time</h1>
-            <p class="description mt-3 mb-4">
-                Sign up for free and turbocharge your productivity today <br>
-                with the world’s best product management platform
-            </p>
-            <form action="">
-                <div class="email-input">
-                    <input type="email" name="email" class="email" required placeholder='Enter your email'>
-                    <button class="sign-up">Sign Up</button>
-                </div>
-            </form>
+            <img class="banner animate__animated animate__swing" src="assets/ballet.svg" alt="ballet">
+            <div data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="hero-section-title mt-3">Get your most important <br> tasks
+                    done in no time</h1>
+                <p class="description mt-3 mb-4">
+                    Sign up for free and turbocharge your productivity today <br>
+                    with the world’s best product management platform
+                </p>
+                <form action="">
+                    <div class="email-input">
+                        <input type="email" name="email" class="email" required placeholder='Enter your email'>
+                        <button class="sign-up">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+
         </section>
-        <section id="feature-blocks">
+        <section id="feature-blocks" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
             <img class="feature-blocks-divider" src="assets/feature-blocks-divider.svg" alt="">
             <div class="feature-blocks-container">
                 <div class="content py-5">
@@ -105,13 +133,14 @@
                 </div>
             </div>
         </section>
-        <section id="free-trial" class="py-3 py-md-5">
+        <section id="free-trial" class="py-3 py-md-5" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
             <p class="desc">Stop wasting time, start saving it</p>
             <h1 class="title">Sign up for your free trial, with the <br> world’s best product tool</h1>
             <button class="trial-btn mt-3 mt-md-4">Start your trial</button>
         </section>
         <hr>
-        <div id="social-logos">
+        <div id="social-logos" data-aos="zoom-in" data-aos-duration="2000">
             <p class="title">We work with some of the world’s <strong>leading</strong> companies</p>
 
             <div class="row mt-5">
@@ -130,7 +159,7 @@
             </div>
         </div>
         <hr>
-        <section id="team" class="mt-3 mt-md-5">
+        <section id="team" class="mt-3 mt-md-5" data-aos="zoom-out-up" data-aos-duration="3000">
             <h2 class="title">A team of exceptional people</h2>
             <p class="description">
                 I want to fly like an angel flare on a ten feet snare I want to dance <br> until the sun comes I want to
@@ -184,7 +213,8 @@
         <div id="footer">
             <div class="content pb-3 pt-md-5 pb-md-4">
                 <div class="row text-center text-md-start">
-                    <div class="col col-12 col-md-6 text-center text-md-start my-4 my-md-0">
+                    <div class="col col-12 col-md-6 text-center text-md-start my-4 my-md-0" data-aos="fade-right"
+                        data-aos-duration="3000">
                         <h1 class="footer-logo mb-4">Quickly</h1>
                         <div class="social-icons">
                             <a href="#"><i class="fab fa-facebook"></i></a>
@@ -193,7 +223,7 @@
                             <a href="#"><i class="fab fa-instagram"></i></a>
                         </div>
                     </div>
-                    <div class="col col-12 col-md-6 footer-nav">
+                    <div class="col col-12 col-md-6 footer-nav" data-aos="fade-left" data-aos-duration="3000">
                         <div class="row">
                             <div class="col col-12 col-sm-4">
                                 <h4>Our Company</h4>
@@ -227,16 +257,21 @@
                 </div>
                 <hr>
                 <div class="copyright text-center">
-                    <span>Copyright 2022 Quickly LTD</span>
+                    <span>Copyright 2022 Quickly LTD &nbsp; | &nbsp; powered by Amirov Kanan</span>
                 </div>
             </div>
         </div>
     </div>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="/js/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 
